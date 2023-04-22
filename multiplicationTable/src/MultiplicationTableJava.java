@@ -7,35 +7,50 @@
 
 /**
  *
- * @author PC
+ * @author Michel
  */
+//public class MultiplicationTableJava {
+//    
+//
+//    public static void main(String[] args){
+//
+//        Scanner in = new Scanner(System.in);
+//
+//        System.out.println("Digite um número para fazer a tabuada multiplicando de 1 até 10");
+//        int n = in.nextInt();
+//        System.out.println("");
+//        {
+//        for(int y = 0; y <= 10; y++)
+//        System.out.println(" > "+n+" X "+y+" = "+n*y+" < ");
+//
+//        }
+//
+//    }
+//
+//}
+
 public class MultiplicationTableJava {
-    
 
-    public static void main(String[] args){
-
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Digite um número da tabuada");
-        int n = in.nextInt();
-        System.out.println("");
-        {
-        for(int y = 0; y <= 10; y++)
-        System.out.println(" > "+n+" X "+y+" = "+n*y+" < ");
+        try {
+            System.out.print("Digite um número para fazer a tabuada multiplicando de 1 até 10: \n");
+            int n = in.nextInt();
 
+            System.out.println("\n" + "Tabuada do " + n + ":\n");
+
+            for (int i = 1; i <= 10; i++) {
+                System.out.printf("%d x %d = %d%n", n, i, n * i);
+            }
+        } catch (Exception e) {
+            System.out.println("Entrada inválida. Por favor, digite um número inteiro.");
         }
-
     }
-
 }
     
-    
-    
-    
-    
-    
-    
-    
+
+
     /*   public static void main (String args[]){
    
             int cont1, cont2, tab;

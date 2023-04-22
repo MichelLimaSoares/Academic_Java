@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="BiggerNumber/src"/>
+	<classpathentry kind="src" path="CashMachine/CaixaEletronico/src"/>
+	<classpathentry kind="src" path="CashMachine/src"/>
+	<classpathentry kind="src" path="multiplicationTable/src"/>
+	<classpathentry kind="src" path="ProductCodeValue/src"/>
+	<classpathentry kind="output" path="BiggerNumber/build/classes"/>
+</classpath>

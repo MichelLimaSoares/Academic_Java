@@ -32,17 +32,19 @@ private static Scanner input;
         System.out.println("----------Tabela de produtos----------");
         System.out.println("| Código do produto | Preço unitário |");
         System.out.println("|-------------------|----------------|");
-        System.out.println("| 1001 | R$5,32 |");
-        System.out.println("| 1324 | R$6,45 |");
-        System.out.println("| 6548 | R$2,37 |");
-        System.out.println("| 0987 | R$5,32 |");
-        System.out.println("| 7623 | R$6,45 |");
-        System.out.println("| 0 | Sair |");
+        System.out.println("|       1001        |     R$5,32     |");
+        System.out.println("|       1002        |     R$6,45     |");
+        System.out.println("|       1003        |     R$2,37     |");
+        System.out.println("|       1004        |     R$5,32     |");
+        System.out.println("|       1005        |     R$6,45     |");
+        System.out.println("|       0           |     Sair       |");
+        System.out.println("|-------------------|----------------|\n");
 
         // Declaring variables
         // Declarando variaveis
         input = new Scanner(System.in);
-        System.out.println("Digite o código do produto: ");
+        System.out.println("|---  Digite o código do produto: ---|\n");
+        System.out.println("|-------------------|----------------|\n");
         int code = input.nextInt(), qtde;
         double preco = 0, total = 0;
         
@@ -52,16 +54,16 @@ private static Scanner input;
             case 1001:
                 preco = 5.32;
                 break;
-            case 1324:
+            case 1002:
                 preco = 6.45;
                 break;
-            case 6548:
+            case 1003:
                 preco = 2.37;
                 break;
-            case 987:
+            case 1004:
                 preco = 5.32;
                 break;
-            case 7623:
+            case 1005:
                 preco = 6.45;
                 break;
             case 0:
@@ -73,18 +75,28 @@ private static Scanner input;
         // Receiving quantity and Processing for outbound
         // Recebendo quantidade e Processando para saida
         if (code != 1 && code != 0) {
-            System.out.print("Digite a quantidade: ");
+            System.out.println("|-------------------|----------------|\n");
+            System.out.println("|---      Digite a quantidade:    ---|\n");
+            System.out.println("|-------------------|----------------|\n");
             qtde = input.nextInt();
             total += preco * qtde;
+
         } else if (code == 0) {
-            System.out.println("Saindo...");
+            System.out.println("|-------------------|----------------|\n");
+            System.out.println("|---             Saindo...        ---|\n");
+            System.out.println("|-------------------|----------------|\n");
+            
         } else {
-            System.out.println("Código inválido.");
+            System.out.println("|-------------------|----------------|\n");
+            System.out.println("|---         Código inválido.     ---|\n");
+            System.out.println("|-------------------|----------------|\n");
         }
         
         // Output, showing total value
         // Saida, mostrando valor total
-        System.out.printf("Preço total: R$%.2f.", total);
+        System.out.println("|-------------------|----------------|\n");
+        System.out.printf("         Preço total: R$%.2f.\n", total);
+        System.out.println("\n|-------------------|----------------|");
 
     } // End main
 
